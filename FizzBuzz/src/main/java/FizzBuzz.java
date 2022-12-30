@@ -17,14 +17,14 @@ public class FizzBuzz {
     public String FizzBuzzGen(int n){
         String fizzbuzz = "";
 
-        if(n % 3 == 0){
+        if(n % 3 == 0 && n % 5 == 0){
+            fizzbuzz = "FizzBuzz";
+        }
+        else if(n % 3 == 0){
             fizzbuzz = "Fizz";
         }
         else if(n % 5 == 0){
             fizzbuzz = "Buzz";
-        }
-        else if(n % 3 == 0 && n % 5 == 0){
-            fizzbuzz = "FizzBuzz";
         }
         return fizzbuzz;
     }
