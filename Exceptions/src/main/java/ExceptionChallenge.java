@@ -16,7 +16,7 @@ public class ExceptionChallenge {
      *
      * Check out this guide on throwing exceptions: https://rollbar.com/guides/java/how-to-throw-exceptions-in-java/#
      */
-    public void mustThrow() throws Exception{
-        String test = "test";
+    public void mustThrow() throws ArithmeticException{
+        int test = 1/0;
     }
 }
