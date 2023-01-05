@@ -8,8 +8,11 @@ public class CustomExceptionThrower {
      *
      * I recommend looking at the test case for a good example of try/catch block usage, as well.
      */
-    public void throwCustomException(){
+    public void throwCustomException() throws CustomException{
+        char[] c = new char[' '];
 
+        if(c[0] != 'a')
+            throw new CustomException("More Chars");
     }
 
 }
