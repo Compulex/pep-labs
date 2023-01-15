@@ -1,0 +1,1 @@
+delete from site_user where firstname like 'Steve';
