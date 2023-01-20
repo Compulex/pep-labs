@@ -1,0 +1,1 @@
+select count(id) from employee where last_name like 'Smith';
