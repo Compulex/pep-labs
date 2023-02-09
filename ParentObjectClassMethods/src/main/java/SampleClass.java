@@ -56,9 +56,22 @@ public class SampleClass {
     public boolean b;
 
     //    implement a custom .equals(SampleClass other){} method here.
+    @Override
+    public boolean equals(SampleClass other){
+        if(other == this){
+            return true;
+        }
+        if(!(other instanceof SampleClass)){
+            return false;
+        }
 
+        boolean aCheck = (this.a == null && other.a == null) || (this.a != null && this.a.equals(other.a))
+
+    }
 
     //    implement a custom .toString(){} method here.
-
+    public String toString(){
+        return 
+    }
     
 }
