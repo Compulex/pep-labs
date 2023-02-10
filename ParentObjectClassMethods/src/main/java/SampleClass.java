@@ -65,12 +65,16 @@ public class SampleClass {
             return false;
         }
 
-        boolean aCheck = (this.a == null && other.a == null) || (this.a != null && this.a.equals(other.a))
+        boolean aCheck = this.a == other.a;
 
+        boolean bCheck = this.b == other.b;
+
+        return aCheck && bCheck;
     }
 
     //    implement a custom .toString(){} method here.
     public String toString(){
+        
         return 
     }
     
