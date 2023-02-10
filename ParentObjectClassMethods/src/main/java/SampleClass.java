@@ -56,26 +56,24 @@ public class SampleClass {
     public boolean b;
 
     //    implement a custom .equals(SampleClass other){} method here.
-    @Override
+
+    public int hashCode(){
+        return this.a;
+    }
     public boolean equals(SampleClass other){
         if(other == this){
             return true;
         }
-        if(!(other instanceof SampleClass)){
+        if(other == null || (other.getClass() != this.getClass())){
             return false;
         }
 
-        boolean aCheck = this.a == other.a;
-
-        boolean bCheck = this.b == other.b;
-
-        return aCheck && bCheck;
+        return (this.a == other.a) && (this.b == other.b);
     }
 
     //    implement a custom .toString(){} method here.
-    public String toString(){
-        
-        return 
+    public String toString(){ 
+        return "SampleClass [a=" + this.a + ", b=" + this.b +"]";
     }
     
 }
